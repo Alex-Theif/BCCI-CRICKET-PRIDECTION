@@ -48,7 +48,7 @@
   <script>
     document.getElementById('joinBtn').addEventListener('click', function() {
       // Fire your custom event to Meta Pixel
-      fbq('trackCustom', 'JoinTelegram');
+      fbq('trackCustom', 'JoinTelegram', { source: 'landing' });
 
       // Optional: also include parameters for better insights
       // fbq('trackCustom', 'JoinTelegram', {source: 'MetaAd', campaign: 'Cricket'});
@@ -61,5 +61,6 @@
   </script>
 </body>
 </html>
+
 
 
